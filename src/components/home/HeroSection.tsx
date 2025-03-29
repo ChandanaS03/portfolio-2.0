@@ -1,14 +1,12 @@
 
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import DynamicHeroBackground from './DynamicHeroBackground';
 
 const HeroSection = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center relative overflow-hidden">
-      <DynamicHeroBackground />
-      <div className="max-w-6xl mx-auto px-4 py-20 md:py-32 relative z-10">
-        <div className="space-y-6 max-w-3xl backdrop-blur-sm bg-background/30 p-6 rounded-lg">
+    <section id="home" className="min-h-screen flex items-center">
+      <div className="max-w-6xl mx-auto px-4 py-20 md:py-32">
+        <div className="space-y-6 max-w-3xl">
           <p className="text-primary font-mono text-lg md:text-xl">Hi, my name is</p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground">
             Chandana Shastri
