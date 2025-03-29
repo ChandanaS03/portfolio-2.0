@@ -1,28 +1,30 @@
 
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative h-screen flex items-center">
-      <div className="absolute inset-0 bg-gradient-to-br from-background to-muted z-[-1]"></div>
-      <div className="max-w-6xl mx-auto px-4 w-full">
-        <div className="flex flex-col space-y-6 max-w-3xl animate-fade-in">
-          <span className="text-primary font-mono text-sm md:text-base">Hi, my name is</span>
+    <section id="home" className="min-h-screen flex items-center">
+      <div className="max-w-6xl mx-auto px-4 py-20 md:py-32">
+        <div className="space-y-6 max-w-3xl">
+          <p className="text-primary font-mono text-lg md:text-xl">Hi, my name is</p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground">
-            Chandana S.
+            Chandana Shastri
           </h1>
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground/70">
-            I build things for the web.
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground/70">
+            Blending AI, mindfulness, and creativity into impactful solutions.
           </h2>
-          <p className="text-foreground/70 max-w-xl text-base md:text-lg">
-            I'm a full-stack developer specializing in building exceptional digital experiences.
-            Currently, I'm focused on building accessible, human-centered products.
+          <p className="text-foreground/60 text-lg max-w-2xl">
+            I am passionate about AI/ML, tech, yoga, and music. I enjoy building intelligent solutions
+            that merge creativity with innovation. Welcome to my portfolio.
           </p>
-          <div className="pt-4">
-            <a href="#projects" className="button-primary inline-flex items-center gap-2 group">
-              View My Work 
-              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-            </a>
+          <div className="flex flex-wrap gap-4 pt-4">
+            <Link to="#projects" className="button-primary">
+              View my work
+            </Link>
+            <Link to="#contact" className="button-secondary flex items-center gap-2">
+              Contact me <ArrowRight size={16} />
+            </Link>
           </div>
         </div>
       </div>

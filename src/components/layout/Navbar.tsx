@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, Mail, Image } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
           <Link to="/" className="text-xl font-bold text-primary font-mono tracking-wide">
-            <span className="text-foreground">C</span>handana<span className="text-primary">.</span>
+            <span className="text-foreground">C</span>handana<span className="text-primary">S</span>hastri
           </Link>
         </div>
         

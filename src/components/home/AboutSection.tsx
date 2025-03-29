@@ -1,8 +1,8 @@
 
 const skills = [
   "JavaScript (ES6+)", "TypeScript", "React", "Node.js", 
-  "Express", "MongoDB", "MySQL", "HTML/CSS",
-  "Tailwind CSS", "Git & GitHub", "RESTful APIs", "Python"
+  "Machine Learning", "Python", "Generative AI", "Web Development",
+  "Tailwind CSS", "Git & GitHub", "RESTful APIs", "Problem Solving"
 ];
 
 const AboutSection = () => {
@@ -17,23 +17,21 @@ const AboutSection = () => {
           <div className="lg:col-span-2">
             <div className="prose prose-invert max-w-none">
               <p className="text-foreground/80 mb-4">
-                Hello! I'm Chandana, a passionate developer dedicated to creating 
-                technology that makes a positive impact. My journey in web 
-                development began during my engineering studies, where I discovered 
-                my love for transforming ideas into reality through code.
+                I am passionate about AI/ML, tech, yoga, and music. I enjoy building intelligent solutions
+                that merge creativity with innovation. An AI enthusiast and engineering student, I love
+                exploring the frontiers of technology.
               </p>
               
               <p className="text-foreground/80 mb-4">
-                I enjoy building robust applications that not only solve problems but 
-                also provide intuitive, user-friendly experiences. With a strong foundation 
-                in both frontend and backend technologies, I strive to create clean, efficient, 
-                and maintainable code.
+                With a keen interest in Machine Learning, Generative AI, Python, web development, and 
+                problem-solving, I'm building a robust skill set. Beyond coding, you'll find me expressing 
+                myself through music as a vocalist and practicing yoga for mindfulness.
               </p>
               
               <p className="text-foreground/80 mb-4">
-                When I'm not coding, you'll find me learning new technologies, contributing to 
-                open-source projects, or exploring outdoor activities. I'm always open to new 
-                challenges and opportunities for growth.
+                I'm driven by the intersection of technology and creativity, always seeking to create
+                meaningful solutions that make a positive impact. My approach combines technical knowledge
+                with mindful thinking to develop innovative applications.
               </p>
               
               <p className="text-foreground/80">
@@ -54,8 +52,8 @@ const AboutSection = () => {
           <div className="relative group">
             <div className="relative z-10 overflow-hidden rounded-md bg-primary/10 p-1">
               <img 
-                src="/placeholder.svg" 
-                alt="Chandana S" 
+                src="/lovable-uploads/3a61e00d-1b81-4d4c-8212-f753749b513b.png" 
+                alt="Chandana Shastri" 
                 className="rounded-md grayscale hover:grayscale-0 transition-all duration-300 w-full max-w-xs mx-auto"
               />
               <div className="absolute inset-0 bg-primary/20 hover:bg-transparent transition-colors duration-300 rounded-md"></div>
