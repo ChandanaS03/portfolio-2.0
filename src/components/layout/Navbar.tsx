@@ -1,6 +1,4 @@
-
-import { useState, useEffect } from 'react';
-import { Menu, X, GitHub, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -67,7 +65,7 @@ const Navbar = () => {
           </div>
           <div className="flex items-center space-x-4">
             <a href="https://github.com/ChandanaS03" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
-              <GitHub size={20} />
+              <Github size={20} />
             </a>
             <a href="https://linkedin.com/in/chandanas03" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
               <Linkedin size={20} />
@@ -110,7 +108,7 @@ const Navbar = () => {
           ))}
           <div className="flex items-center space-x-6 mt-8">
             <a href="https://github.com/ChandanaS03" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
-              <GitHub size={24} />
+              <Github size={24} />
             </a>
             <a href="https://linkedin.com/in/chandanas03" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
               <Linkedin size={24} />

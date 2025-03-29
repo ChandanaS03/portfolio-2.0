@@ -1,5 +1,4 @@
-
-import { ArrowUpRight, GitHub } from 'lucide-react';
+import { ArrowUpRight, Github } from 'lucide-react';
 
 interface Project {
   id: number;
@@ -97,7 +96,7 @@ const ProjectsSection = () => {
                     rel="noopener noreferrer"
                     className="text-foreground/70 hover:text-primary transition-colors"
                   >
-                    <GitHub size={22} />
+                    <Github size={22} />
                   </a>
                   {project.liveUrl && (
                     <a 
@@ -140,7 +139,7 @@ const ProjectsSection = () => {
                   rel="noopener noreferrer"
                   className="text-foreground/70 hover:text-primary transition-colors"
                 >
-                  <GitHub size={20} />
+                  <Github size={20} />
                 </a>
                 {project.liveUrl && (
                   <a 
