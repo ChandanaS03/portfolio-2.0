@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, Image } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -18,7 +18,7 @@ const Navbar = () => {
       setIsScrolled(scrollPosition > 50);
       
       // Update active section based on scroll position
-      const sections = ['home', 'about', 'projects', 'contact'];
+      const sections = ['home', 'about', 'projects', 'art', 'contact'];
       
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -54,6 +54,7 @@ const Navbar = () => {
               { name: 'Home', href: '#home' },
               { name: 'About', href: '#about' },
               { name: 'Projects', href: '#projects' },
+              { name: 'Art', href: '#art' },
               { name: 'Contact', href: '#contact' },
             ].map((item) => (
               <a 
@@ -61,7 +62,12 @@ const Navbar = () => {
                 href={item.href}
                 className={`nav-item ${activeSection === item.href.substring(1) ? 'nav-item-active' : ''}`}
               >
-                <span className="text-primary mr-1 font-mono">0{item.name === 'Home' ? 1 : item.name === 'About' ? 2 : item.name === 'Projects' ? 3 : 4}.</span> {item.name}
+                <span className="text-primary mr-1 font-mono">0{
+                  item.name === 'Home' ? 1 : 
+                  item.name === 'About' ? 2 : 
+                  item.name === 'Projects' ? 3 : 
+                  item.name === 'Art' ? 4 : 5
+                }.</span> {item.name}
               </a>
             ))}
           </div>
@@ -97,6 +103,7 @@ const Navbar = () => {
             { name: 'Home', href: '#home' },
             { name: 'About', href: '#about' },
             { name: 'Projects', href: '#projects' },
+            { name: 'Art', href: '#art' },
             { name: 'Contact', href: '#contact' },
           ].map((item) => (
             <a 
@@ -105,7 +112,12 @@ const Navbar = () => {
               onClick={closeMenu}
               className="text-foreground hover:text-primary text-2xl font-medium transition-colors"
             >
-              <span className="text-primary font-mono">0{item.name === 'Home' ? 1 : item.name === 'About' ? 2 : item.name === 'Projects' ? 3 : 4}.</span> {item.name}
+              <span className="text-primary font-mono">0{
+                item.name === 'Home' ? 1 : 
+                item.name === 'About' ? 2 : 
+                item.name === 'Projects' ? 3 : 
+                item.name === 'Art' ? 4 : 5
+              }.</span> {item.name}
             </a>
           ))}
           <div className="flex items-center space-x-6 mt-8">
