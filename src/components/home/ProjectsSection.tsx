@@ -1,3 +1,4 @@
+
 import { ArrowUpRight, Github } from 'lucide-react';
 
 interface Project {
@@ -14,31 +15,41 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Portfolio Website",
-    description: "A professional portfolio website built with React and Tailwind CSS to showcase my projects and skills. Features responsive design and smooth animations.",
-    image: "/placeholder.svg",
-    technologies: ["React", "Tailwind CSS", "TypeScript", "Vite"],
-    githubUrl: "https://github.com/ChandanaS03/Portfolio",
-    liveUrl: "https://chandanas.dev",
+    title: "AutoVision",
+    description: "AI-powered system that can detect car damage and estimate repair costs.",
+    image: "/lovable-uploads/2c5ff90b-b9c3-4c77-894d-f41957e5d623.png",
+    technologies: ["Python", "TensorFlow", "Machine Learning", "Computer Vision"],
+    githubUrl: "https://github.com/ChandanaS03/AutoVision",
+    liveUrl: "https://autovision-demo.vercel.app",
     featured: true
   },
   {
     id: 2,
-    title: "E-commerce Platform",
-    description: "A full-stack e-commerce application with product listings, user authentication, shopping cart, and payment integration using Stripe.",
-    image: "/placeholder.svg",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
-    githubUrl: "https://github.com/ChandanaS03/ecommerce",
-    liveUrl: "https://ecomm-project.vercel.app",
+    title: "Gizzz101",
+    description: "An AI Summarizer built on Replit.",
+    image: "/lovable-uploads/6ca7ab0f-187f-4c57-85dc-76e9cc68c890.png",
+    technologies: ["JavaScript", "React", "AI API", "Replit"],
+    githubUrl: "https://github.com/ChandanaS03/Gizzz101",
+    liveUrl: "https://gizzz101.replit.app",
     featured: true
   },
   {
     id: 3,
-    title: "Weather Dashboard",
-    description: "An interactive weather application that provides real-time weather updates and forecasts for any location around the world using a weather API.",
+    title: "AWS Cloud Webapp",
+    description: "A mini cloud project deployed on AWS S3.",
+    image: "/lovable-uploads/010dd25f-fbc6-494e-bfe2-464b40864a90.png",
+    technologies: ["AWS", "S3", "JavaScript", "HTML", "CSS"],
+    githubUrl: "https://github.com/ChandanaS03/aws-webapp",
+    liveUrl: "https://cloudapp.aws.s3.com",
+    featured: true
+  },
+  {
+    id: 4,
+    title: "DeepFake Text Detection",
+    description: "Detects Fake News using DL",
     image: "/placeholder.svg",
-    technologies: ["JavaScript", "HTML", "CSS", "Weather API"],
-    githubUrl: "https://github.com/ChandanaS03/weather-app",
+    technologies: ["Python", "Deep Learning", "NLP", "TensorFlow"],
+    githubUrl: "https://github.com/ChandanaS03/deepfake-detection",
     featured: false
   },
 ];

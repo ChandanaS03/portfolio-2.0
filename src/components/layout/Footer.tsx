@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+
+import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p className="text-foreground/80 text-sm">
-              &copy; {new Date().getFullYear()} Chandana S. All rights reserved.
+              &copy; {new Date().getFullYear()} Chandana Shastri. All rights reserved.
             </p>
           </div>
           <div className="flex items-center space-x-6">
@@ -21,7 +22,7 @@ const Footer = () => {
               <Github size={20} />
             </a>
             <a 
-              href="https://linkedin.com/in/chandanas03" 
+              href="https://linkedin.com/in/chandanashastri" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-foreground/70 hover:text-primary transition-colors"
@@ -30,7 +31,16 @@ const Footer = () => {
               <Linkedin size={20} />
             </a>
             <a 
-              href="mailto:chandanas@gmail.com" 
+              href="https://twitter.com/ChandanaShastri" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-foreground/70 hover:text-primary transition-colors"
+              aria-label="Twitter"
+            >
+              <Twitter size={20} />
+            </a>
+            <a 
+              href="mailto:chandanashastri12@gmail.com" 
               className="text-foreground/70 hover:text-primary transition-colors"
               aria-label="Email"
             >

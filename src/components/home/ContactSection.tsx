@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Mail, Send } from 'lucide-react';
+import { Mail, Send, Github, Linkedin, Twitter } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
@@ -118,17 +118,69 @@ const ContactSection = () => {
             </button>
           </form>
           
-          <div className="mt-8 pt-6 border-t border-border text-center">
-            <p className="text-foreground/60 text-sm">
-              Prefer direct email?
+          <div className="mt-8 pt-6 border-t border-border">
+            <p className="text-foreground/60 text-sm mb-4">
+              Social Media Handles:
             </p>
-            <a 
-              href="mailto:chandanas@gmail.com" 
-              className="flex items-center justify-center gap-2 text-primary mt-2 hover:underline"
-            >
-              <Mail size={18} />
-              chandanas@gmail.com
-            </a>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-left">
+              <a 
+                href="https://linkedin.com/in/chandanashastri" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors"
+              >
+                <Linkedin size={18} />
+                linkedin.com/in/chandanashastri
+              </a>
+              
+              <a 
+                href="https://github.com/ChandanaS03" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors"
+              >
+                <Github size={18} />
+                github.com/ChandanaS03
+              </a>
+              
+              <a 
+                href="https://twitter.com/ChandanaShastri" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors"
+              >
+                <Twitter size={18} />
+                twitter.com/ChandanaShastri
+              </a>
+              
+              <a 
+                href="mailto:chandanashastri12@gmail.com" 
+                className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors"
+              >
+                <Mail size={18} />
+                chandanashastri12@gmail.com
+              </a>
+            </div>
+            
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3 text-left">
+              <div className="flex items-center gap-2 text-foreground/80">
+                <span>🔗</span>
+                <span>orcid.org/chandana.shastri</span>
+              </div>
+              <div className="flex items-center gap-2 text-foreground/80">
+                <span>🔗</span>
+                <span>g.dev/chandana.shastri</span>
+              </div>
+              <div className="flex items-center gap-2 text-foreground/80">
+                <span>🔗</span>
+                <span>microsoft.com/chandanashastri</span>
+              </div>
+            </div>
+            
+            <p className="mt-6 text-center text-primary">
+              Feel free to connect or drop a message! 📩
+            </p>
           </div>
         </div>
       </div>
